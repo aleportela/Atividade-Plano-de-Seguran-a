@@ -1,36 +1,43 @@
 # Gestão de riscos
 
-## 1. Método
+## 1. Método de avaliação
 
-A gestão de riscos deve identificar os ativos importantes, as ameaças que podem afetá-los, as vulnerabilidades existentes e as consequências para a instituição. A avaliação inicial abaixo é qualitativa e serve como ponto de partida; a classificação definitiva depende do inventário e da análise técnica.
+A avaliação inicial considera probabilidade e impacto, ambos pontuados de 1 a 5. O nível de risco é o produto dos dois valores:
 
-## 2. Matriz inicial de riscos
+**Risco = Probabilidade × Impacto**
 
-| Risco | Possível impacto | Prioridade inicial | Tratamento recomendado |
+A classificação é uma referência inicial e deve ser calibrada após o inventário e o diagnóstico técnico.
+
+| Pontuação | Nível | Tratamento recomendado |
+|---:|---|---|
+| 1 a 4 | Baixo | Manter controles e revisar periodicamente |
+| 5 a 9 | Moderado | Definir responsável e ação de melhoria |
+| 10 a 16 | Alto | Plano de tratamento com prioridade e prazo curto |
+| 17 a 25 | Crítico | Ação imediata, escalonamento à Direção e avaliação de interrupção segura do serviço |
+
+## 2. Riscos prioritários iniciais — a validar
+
+| Risco | Impacto potencial | Prioridade inicial | Ação-chave |
 |---|---|---|---|
-| Phishing ou roubo de credenciais | Acesso indevido a contas e dados | Alta | MFA, treinamento, filtros e processo de comunicação |
-| Malware ou ransomware | Indisponibilidade e perda de arquivos | Alta | Atualizações, proteção de endpoint e backup protegido |
-| Falha de servidor local | Interrupção de sistemas e serviços | Alta | Monitoramento, manutenção, redundância conforme criticidade e recuperação |
-| Backup inexistente ou sem teste | Impossibilidade de recuperar dados | Alta | Política de backup e testes documentados |
-| Equipamento desatualizado | Exploração de vulnerabilidades | Alta | Inventário, atualização e substituição planejada |
-| Acesso excessivo de usuários | Exposição ou alteração indevida de dados | Alta | Menor privilégio e revisão periódica de acessos |
-| Indisponibilidade de fornecedor | Falha do site ou aplicativo | Média/Alta | SLA, contato de suporte e plano alternativo |
-| Perda ou furto de notebook | Exposição de dados institucionais | Média/Alta | Criptografia, bloqueio e procedimento de comunicação |
-| Falha de energia ou conectividade | Interrupção das atividades | Média | Nobreak onde necessário e plano de continuidade |
+| Ransomware ou malware | Perda de dados, paralisação e possível vazamento | Crítica | EDR/antimalware, atualização, segmentação, privilégio mínimo e backup isolado testado |
+| Acesso indevido a dados de alunos | Exposição de notas, dados cadastrais, documentos ou saúde | Crítica | MFA, revisão de acessos, logs, classificação e controle de compartilhamento |
+| Conta de professor/funcionário comprometida | Fraude, exposição de dados ou alteração de registros | Alta | MFA, proteção de e-mail, treinamento e redefinição segura de credenciais |
+| Indisponibilidade do data center ou internet | Interrupção de sistemas acadêmicos, administrativos e comunicação | Alta | UPS, contratos, backups e plano manual de contingência |
+| Ataque a site/aplicativo/fornecedor | Exposição de dados, interrupção e dependência de terceiro | Alta | Avaliação contratual, controle de acesso, testes e plano de saída |
+| Perda ou roubo de notebook | Acesso a arquivos locais, e-mail e sistemas | Alta | Criptografia de disco, bloqueio, inventário, gestão remota e reporte imediato |
+| Pendrive ou Wi-Fi não autorizado | Infecção ou entrada indevida na rede interna | Moderada/Alta | Política de mídia removível, segmentação e controle de rede sem fio |
 
-## 3. Priorização
+## 3. Tratamento de cada risco
 
-A prioridade deve considerar probabilidade e impacto. Riscos que envolvam dados pessoais, serviços essenciais, contas privilegiadas ou possibilidade de perda generalizada de dados devem receber atenção especial.
+Para cada risco identificado, manter registro com:
+- Ativo, processo ou serviço afetado.
+- Evento de risco e causas prováveis.
+- Probabilidade e impacto, com justificativa.
+- Prioridade e responsável.
+- Medidas de tratamento e prazo.
+- Evidência de conclusão.
+- Risco residual e decisão formal da Direção, quando aplicável.
 
-## 4. Plano de tratamento
+## 4. Revisão
 
-Para cada risco identificado, registrar:
-- Ativo ou serviço afetado.
-- Descrição do risco e causa provável.
-- Probabilidade e impacto.
-- Medida de tratamento escolhida.
-- Responsável pela execução.
-- Prazo e evidência de conclusão.
-- Risco residual após a implantação.
-
-A aceitação de riscos relevantes deve ser formalizada pela direção, com justificativa e prazo de revisão.
+A TI deve revisar riscos e controles em conjunto com as áreas responsáveis. O Comitê de Segurança e Privacidade deve revisar o registro trimestralmente e após incidentes graves, mudanças de fornecedor ou alterações relevantes na infraestrutura.
