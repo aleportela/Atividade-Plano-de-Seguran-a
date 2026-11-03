@@ -58,10 +58,6 @@ Nenhuma medida deve ser marcada como concluída sem evidência, como configuraç
 - [ ] Diagnóstico técnico e priorização final
 - [ ] Inclusão do documento final em PDF — **reservada para a etapa posterior**
 
-## Cuidados com o repositório
-
-O documento-base está classificado como **uso interno**. No momento, este repositório está público. Antes de acrescentar informações reais da infraestrutura, recomenda-se avaliar a alteração da visibilidade para **privado**. Não publique senhas, tokens, endereços internos, diagramas detalhados da rede, dados pessoais ou configurações administrativas.
-
 ## Referência do documento principal
 
 A versão de referência para a futura inclusão do documento final é o arquivo enviado em formato DOCX, denominado **Plano_de_Seguranca_da_Informacao_Escola(1).docx**. O arquivo não foi incluído neste repositório nesta etapa; a inclusão do documento em PDF ficará para depois, conforme combinado.
