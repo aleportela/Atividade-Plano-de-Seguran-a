@@ -1,44 +1,61 @@
-# Caracterização e inventário do ambiente
+# Ambiente e inventário
 
-## 1. Informações conhecidas
+Este documento organiza o que já foi informado sobre o ambiente e o que ainda precisa ser confirmado. Ele não substitui o inventário técnico real.
 
-| Item | Informação informada |
+## 1. Caracterização conhecida
+
+| Elemento | Informação conhecida | Ação de levantamento |
+|---|---|---|
+| Alunos | Aproximadamente 2.200 | Confirmar quantitativo e sistemas que armazenam seus dados |
+| Professores e funcionários | Existem; quantitativos não informados | Identificar pessoas, funções, vínculos e perfis de acesso |
+| Laboratórios | 3 laboratórios com 30 computadores cada | Confirmar patrimônio, localização, sistema, atualização e usuário |
+| Parque adicional | Desktops e notebooks fora dos laboratórios | Levantar quantidade, localização, responsável, garantia e suporte |
+| Data center | Local / on-premise | Inventariar servidores, serviços, contas, energia, climatização, logs e backup |
+| Site | Hospedagem contratada | Identificar fornecedor, contrato, painel administrativo, dados e integrações |
+| Aplicativo | Aplicativo institucional | Identificar fornecedor, dados tratados, permissões, integrações e atualizações |
+| Sistema operacional | Windows | Identificar versões e situação de suporte |
+| Sala de reunião | Espaço identificado no levantamento inicial | Verificar computador, tela, videoconferência, Wi-Fi e exposição de documentos |
+
+## 2. Lacunas que precisam ser levantadas
+
+Ainda não foram confirmados: quantidade e versões dos servidores; topologia e endereçamento da rede; firewall; Wi-Fi; provedor de internet; diretório e gestão de identidades; e-mail; sistemas acadêmicos e financeiros; fornecedor do aplicativo; controles atuais de backup; solução antimalware/EDR; VPN; monitoramento; e quantidade total de funcionários e professores.
+
+## 3. Modelo de inventário de ativos
+
+| Campo | Preenchimento |
 |---|---|
-| Alunos | Aproximadamente 2.200 |
-| Laboratórios | 3 |
-| Computadores por laboratório | 30 |
-| Total nos laboratórios | 90 computadores |
-| Equipamentos adicionais | Desktops e notebooks |
-| Servidores | Ambiente local de servidores |
-| Site institucional | Hospedagem contratada |
-| Aplicativo | Aplicativo institucional |
-| Sistemas operacionais | Ambiente baseado em Windows |
-| Usuários | Alunos, professores e funcionários |
+| Identificador patrimonial / serial | |
+| Tipo de ativo | |
+| Fabricante e modelo | |
+| Localização física | |
+| Setor / responsável | |
+| Sistema operacional e versão | |
+| Aplicativos relevantes | |
+| Endereço / identificação de rede (em registro restrito) | |
+| Situação de atualização e suporte | |
+| Proteção de endpoint | |
+| Criptografia | |
+| Criticidade | |
+| Data da última verificação | |
+| Observações / plano de ação | |
 
-## 2. Informações que precisam ser levantadas
+## 4. Inventário de sistemas e fornecedores
 
-O inventário deve ser realizado pela equipe responsável, sem divulgar neste repositório dados que facilitem ataques ou exponham informações internas.
+Para cada sistema, serviço ou fornecedor, registrar nome, finalidade, responsável interno, dados tratados, local de hospedagem, integrações, usuários com acesso, contrato, suporte, backup, recuperação, procedimento de saída e contato para incidentes.
 
-| Categoria | Dados a confirmar |
-|---|---|
-| Estações de trabalho | Quantidade total, modelo, sistema operacional, setor e responsável |
-| Notebooks | Quantidade, usuários, criptografia e forma de armazenamento |
-| Servidores | Função, sistema, localização, responsável e situação de suporte |
-| Rede | Roteadores, switches, pontos de acesso, firewall e segmentação |
-| Sistemas | Nome, finalidade, fornecedor, responsável e tipo de informação armazenada |
-| Contas | Tipos de perfil, contas administrativas e processo de desligamento |
-| Backup | Dados incluídos, frequência, retenção, local e último teste de restauração |
-| Fornecedores | Serviço prestado, contato técnico, contrato e obrigações de segurança |
+## 5. Classificação das informações
 
-## 3. Classificação das informações
+| Classe | Exemplos | Regras mínimas |
+|---|---|---|
+| Pública | Calendário público, comunicados aprovados | Revisar antes de publicar; evitar dados pessoais desnecessários |
+| Interna | Procedimentos e documentos operacionais | Acesso a colaboradores autorizados e uso de canais institucionais |
+| Confidencial | Matrícula, notas, frequência, contratos, folha e contatos | Acesso por função; armazenamento institucional; criptografia quando disponível |
+| Restrita / sensível | Saúde, deficiência, biometria, medidas disciplinares, credenciais e documentos de identificação | Acesso estritamente necessário; MFA em sistemas críticos; criptografia e registro |
 
-A instituição pode adotar uma classificação simples:
+## 6. Cuidados com o inventário
 
-- **Pública:** informações autorizadas para divulgação, como comunicados institucionais.
-- **Interna:** documentos de uso interno que não devem ser publicados indiscriminadamente.
-- **Confidencial:** dados pessoais, registros acadêmicos, documentos funcionais e informações administrativas restritas.
-- **Restrita:** credenciais, dados de autenticação, configurações críticas e informações cuja exposição possa comprometer a infraestrutura ou as pessoas.
-
-## 4. Cuidados durante o inventário
-
-Não registrar senhas, tokens, chaves de acesso ou dados pessoais desnecessários. Inventários técnicos detalhados, endereços IP internos, diagramas completos e configurações de segurança devem ficar em local controlado, com acesso restrito.
+- Não registrar senhas, tokens, chaves, dados pessoais desnecessários ou segredos.
+- Manter diagramas detalhados, endereços internos, configurações e inventários completos em local de acesso restrito.
+- Registrar responsável e data da verificação.
+- Marcar como pendente qualquer informação ainda não confirmada.
+- Não afirmar que um controle está ativo sem evidência verificável.
