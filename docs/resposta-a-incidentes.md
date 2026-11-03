@@ -1,65 +1,75 @@
-# Resposta a incidentes de segurança
+# Resposta a incidentes
 
 ## 1. Objetivo
 
-Orientar a instituição quando ocorrer um evento que possa comprometer sistemas, equipamentos, dados pessoais ou a continuidade das atividades escolares.
+Orientar a instituição quando ocorrer evento que comprometa ou possa comprometer a confidencialidade, integridade ou disponibilidade de dados, sistemas ou serviços. Suspeitas devem ser reportadas rapidamente, mesmo sem confirmação.
 
 ## 2. Exemplos de incidentes
 
-- Suspeita de phishing ou roubo de senha.
-- Infecção por malware ou ransomware.
-- Acesso não autorizado a sistemas ou arquivos.
-- Perda ou furto de notebook, celular ou mídia.
-- Exposição acidental de dados pessoais.
-- Indisponibilidade ou alteração indevida de serviços.
-- Falha de backup ou exclusão acidental de informações relevantes.
+- Computador com ransomware, vírus, pop-ups ou comportamento incomum.
+- E-mail ou mensagem de phishing, conta invadida ou regra de encaminhamento desconhecida.
+- Notebook, celular ou mídia removível perdido ou roubado.
+- Envio de boletim, lista ou informação de aluno para destinatário errado.
+- Acesso não autorizado a sistema, painel administrativo, servidor, Wi-Fi ou sala técnica.
+- Site ou aplicativo alterado, indisponível ou expondo dados.
+- Falha de backup, exclusão indevida, perda de banco de dados ou indisponibilidade de fornecedor.
 
-## 3. Etapas de resposta
+## 3. Fluxo de resposta
 
-### 3.1 Identificação e comunicação
-
-O usuário deve comunicar imediatamente a suspeita ao responsável de TI ou ao canal formal definido pela escola. A comunicação deve informar o que ocorreu, quando foi percebido, quais equipamentos ou serviços parecem afetados e quais ações já foram realizadas.
-
-### 3.2 Contenção
-
-A equipe técnica deve limitar a propagação do incidente. Conforme o caso, pode ser necessário isolar um equipamento da rede, bloquear uma conta, revogar sessões, suspender credenciais ou solicitar apoio do fornecedor. A contenção deve preservar evidências sempre que possível.
-
-### 3.3 Análise
-
-Registrar horários, sistemas envolvidos, usuários afetados, sinais observados e medidas adotadas. Avaliar se houve acesso, alteração, perda ou divulgação de dados.
-
-### 3.4 Erradicação e recuperação
-
-Remover a causa do incidente, corrigir vulnerabilidades, redefinir credenciais comprometidas e restaurar sistemas a partir de cópias confiáveis. Antes de retornar à operação, verificar a segurança do ambiente.
-
-### 3.5 Comunicação e aprendizado
-
-A direção e os responsáveis designados devem avaliar os impactos e as comunicações necessárias. Registrar lições aprendidas e ações para evitar recorrência.
-
-## 4. Incidentes envolvendo dados pessoais
-
-Quando houver suspeita de incidente que possa envolver dados pessoais, a instituição deve acionar imediatamente o responsável pelo tema de privacidade e a direção. Deve-se avaliar a natureza dos dados, as pessoas afetadas, os possíveis danos e as medidas de mitigação.
-
-A comunicação à Autoridade Nacional de Proteção de Dados (ANPD) e aos titulares deve seguir a legislação e a regulamentação aplicável, observando os prazos vigentes. A decisão deve ser documentada pelo controlador, com apoio técnico e jurídico quando necessário.
-
-## 5. Registro mínimo do incidente
-
-| Campo | Registro |
+| Etapa | Ação |
 |---|---|
-| Número do incidente | |
-| Data e hora da identificação | |
-| Pessoa que comunicou | |
-| Sistema ou equipamento envolvido | |
-| Descrição do ocorrido | |
-| Dados pessoais potencialmente envolvidos | |
-| Ações de contenção | |
-| Fornecedores acionados | |
-| Avaliação de impacto | |
-| Decisões de comunicação | |
-| Medidas de recuperação | |
-| Ações preventivas | |
-| Responsável pelo encerramento | |
+| 1. Reportar e registrar | Usuário comunica imediatamente à TI pelo canal institucional. Registrar data/hora, pessoa, equipamento, sistema, evidências e impacto. |
+| 2. Triar e classificar | TI avalia alcance, criticidade, sistemas afetados, dados envolvidos, risco de propagação e necessidade de acionar Direção, privacidade, jurídico e fornecedor. |
+| 3. Conter | Isolar equipamento, bloquear conta, revogar sessões/tokens ou suspender acesso. Preservar evidências. |
+| 4. Investigar | Identificar vetor, período, sistemas, dados e titulares potencialmente afetados. Preservar logs e registros com controle de acesso. |
+| 5. Comunicar e decidir | Direção/controlador, com apoio do encarregado e jurídico, avalia comunicação à ANPD e aos titulares. |
+| 6. Erradicar e recuperar | Remover causa, corrigir vulnerabilidade, redefinir credenciais, restaurar backup confiável e validar integridade. |
+| 7. Encerrar e aprender | Documentar causa-raiz, impacto, decisões, notificações, custos e melhorias. |
 
-## 6. Testes
+## 4. Critérios de severidade
 
-Recomenda-se realizar exercícios simulados, como perda de equipamento, conta comprometida e indisponibilidade de servidor. Os exercícios devem ser registrados e utilizados para aperfeiçoar o procedimento.
+| Nível | Exemplo | Escalonamento |
+|---|---|---|
+| P1 — Crítico | Ransomware em servidor, vazamento de dados sensíveis/de menores, indisponibilidade ampla ou invasão administrativa | Acionar imediatamente Direção, TI, privacidade/jurídico e fornecedores |
+| P2 — Alto | Conta comprometida, malware em múltiplos equipamentos, exposição limitada ou indisponibilidade importante | TI e gestor da área imediatamente; envolver Direção conforme impacto |
+| P3 — Moderado/Baixo | Tentativa bloqueada ou falha localizada sem impacto relevante | Registrar, tratar pela TI e analisar tendências |
+
+## 5. Cuidados imediatos
+
+- Não investigar por conta própria.
+- Não apagar mensagens, arquivos ou registros.
+- Não conectar mídia removível ao equipamento suspeito.
+- Em equipamento suspeito, isolar a conexão de rede e acionar TI.
+- Não negociar nem pagar resgate sem decisão formal e assessoria especializada.
+- Não divulgar o incidente em redes sociais.
+
+## 6. Comunicação de incidentes com dados pessoais
+
+A Resolução CD/ANPD nº 15/2024 disciplina a comunicação de incidentes de segurança com dados pessoais. Quando o incidente puder acarretar risco ou dano relevante aos titulares, o controlador deve avaliar a comunicação à ANPD e aos titulares, observando os critérios e prazos aplicáveis.
+
+O documento-base registra como referência geral três dias úteis para comunicação à ANPD e aos titulares, contados do conhecimento pelo controlador de que o incidente afetou dados pessoais, ressalvada regra específica. A resolução prevê etapas preliminar e complementar em situações justificadas nas quais ainda não estejam disponíveis todas as informações. Prazo diferenciado para agentes de pequeno porte depende de enquadramento efetivo; a escola não deve presumir que se enquadra nessa categoria sem análise.
+
+A regulamentação também exige manter registros de incidentes de segurança com dados pessoais por, no mínimo, cinco anos, inclusive daqueles que não forem comunicados, observadas as regras aplicáveis.
+
+Qualquer incidente com possível exposição de dados de alunos, responsáveis ou funcionários deve ser escalonado imediatamente à Direção e ao responsável por privacidade. Não aguardar confirmação completa para reportar internamente.
+
+## 7. Informações que devem ser reunidas
+
+- Data e hora em que a escola tomou conhecimento e, se possível, data de ocorrência.
+- Natureza do incidente, sistemas envolvidos e categorias de dados pessoais afetados.
+- Estimativa do número de titulares afetados, distinguindo crianças e adolescentes quando aplicável.
+- Riscos e possíveis impactos aos titulares.
+- Medidas de segurança existentes antes do incidente e medidas tomadas depois.
+- Providências para mitigar efeitos, proteger titulares e evitar recorrência.
+- Justificativa de eventual atraso e dados de contato do canal responsável.
+
+## 8. Comunicação externa
+
+- Somente porta-voz designado pela Direção pode emitir comunicado institucional.
+- A comunicação aos titulares deve utilizar linguagem simples e informar o que ocorreu, dados possivelmente afetados, riscos, providências e canal para dúvidas.
+- Registrar a decisão de comunicar ou não comunicar, justificativa, responsáveis e evidências.
+- Fornecedores devem entregar informações técnicas rapidamente para permitir que o controlador cumpra suas obrigações.
+
+## 9. Ficha de registro
+
+Use o modelo de registro em [Modelos e registros](modelos-e-registros.md). O registro deve ser guardado em local restrito, com acesso apenas às pessoas envolvidas na resposta e na avaliação de privacidade.
