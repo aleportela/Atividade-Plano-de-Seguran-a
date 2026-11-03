@@ -1,0 +1,11 @@
+# Arquivos temporários
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# Segredos e arquivos locais
+.env
+.env.*
+!.env.example
+secrets/
